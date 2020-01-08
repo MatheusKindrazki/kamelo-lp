@@ -8,6 +8,7 @@ header
         margin-right: 100px
         height: 15px
         display: block
+        @include transition(all 0.9s linear)
     ul
         margin: 0
         padding: 0
@@ -20,3 +21,13 @@ header
                 font-family: $open
                 font-size: 12px
                 color: #000000 !important
+                @include transition(all 0.9s linear)
+
+body.fp-viewing-1
+    header
+        ul
+            li
+                a
+                    color: #ffffff !important
+        img
+            filter: invert(1)
