@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap')
+	
+body
+	background-color: $white
+	padding: 0
+	margin: 0
+	font-size: $font-size
+	text-rendering: optimizeLegibility !important
+	-webkit-font-smoothing: antialiased !important
+
+pre
+	display: block
+	padding: 9.5px
+	margin: 0 0 10px
+	font-size: 13px
+	line-height: 1.428571429
+	word-break: break-all
+	word-wrap: break-word
+	color: $white
+	background-color: $primary
+	border: 1px solid $primary
+	border-radius: 4px
+
+
+a, button
+	cursor: pointer !important
+	outline: none !important
+
+.title-1
+	font-family: $open
+	font-size: 44px
+	color: #000000
+	margin-bottom: 30px
+	font-weight: 500
+
+p
+	opacity: 0.4
+	font-family: $open
+	font-size: 14px
+	line-height: 1.79
+	color: #000000
+
+.btn-theme
+	padding: 0 15px
+	min-width: 146px
+	height: 56px
+	border-radius: 6px
+	box-shadow: 0 19px 28px 0 rgba(255, 133, 58, 0.18)
+	background-color: $orange
+	font-family: $open
+	font-size: 14px
+	font-weight: 600
+	color: #ffffff !important
+	text-decoration: none !important
+	display: flex
+	align-items: center
+	justify-content: center
+	border: 0px solid
+	width: fit-content
+	@include transition(all .3s ease)
+	&:hover
+		@include transform(scale(1.05))
