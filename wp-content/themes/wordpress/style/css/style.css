@@ -229,3 +229,33 @@ body.fp-viewing-1 header img {
     -ms-user-select: none;
     user-select: none;
     pointer-events: none; }
+
+#objetivos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #objetivos .item-single {
+    text-align: center; }
+    #objetivos .item-single .img-item {
+      width: 300px;
+      height: 251px;
+      border-radius: 25px;
+      display: block;
+      margin: 0 auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 20px; }
+    #objetivos .item-single .title {
+      font-family: "Open Sans", sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      color: #434343;
+      margin-bottom: 20px; }
+    #objetivos .item-single .desc {
+      font-family: "Open Sans", sans-serif;
+      font-size: 24px;
+      color: #7a7a7a; }
