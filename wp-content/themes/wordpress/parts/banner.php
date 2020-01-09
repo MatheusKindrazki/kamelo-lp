@@ -1,7 +1,7 @@
 <div class="section" data-anchor="introducao">
     <div id="banner">
     <div class="row h-100">
-        <div class="col-lg-5">
+        <div class="col-lg-6 col-xl-5">
             <div class="info">
                 <div class="top">
                     <h1 class="title-1">
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-6 col-xl-7 d-lg-block d-none">
             <div class="img-banner" style="background-image: url('<?php echo get_field('imagem_banner'); ?>')"></div>
         </div>
     </div>

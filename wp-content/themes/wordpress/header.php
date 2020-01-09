@@ -7,7 +7,7 @@
     <?php wp_nav_menu(); ?>
 </header>
 
-<nav class="navigation">
+<nav class="navigation d-lg-block d-none">
     <div class="content">
         <p class="sessao"></p>
         <p class="title-site">

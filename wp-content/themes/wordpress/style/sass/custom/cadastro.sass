@@ -1,12 +1,15 @@
 #cadastro
     width: 100%
     min-height: 100vh
-    background-image: url('../../images/bg-cadastro.png')
     background-position: top
     background-repeat: no-repeat
     background-size: cover
     display: flex
     align-items: center
+    padding: 100px 0
+    @media(min-width: 992px)
+        background-image: url('../../images/bg-cadastro.png')
+        padding: 0
     .title-1-cad,.title-2-cad
         font-family: $roboto
         font-size: 50px
@@ -15,23 +18,33 @@
         color: #434343
     .title-2-cad
         text-shadow: 0 6px 23px rgba(0, 0, 0, 0.08)
-        font-size: 100px
         line-height: 1
         letter-spacing: 11.49px
         margin-bottom: 30px
+        font-size: 50px
+        @media(min-width: 576px)
+            font-size: 100px
     .desc
         font-family: $open
-        font-size: 24px
+        font-size: 16px
         color: #7e7e7e
+        margin-bottom: 40px
+        @media(min-width: 992px)
+            font-size: 24px
+            margin-bottom: 0
 
 .form-eddy
-    width: 90%
     border-radius: 10px
     box-shadow: 3px 14px 14px 3px rgba(0, 0, 0, 0.04)
     border: solid 1px #f3f3f3
     background-color: #ffffff
-    margin-right: 30px
-    padding: 40px
+    width: 100%
+    padding: 40px 15px
+    @media(min-width: 576px)
+        padding: 40px
+    @media(min-width: 992px)
+        width: 90%
+        margin-right: 30px
     .title-form
         font-family: $open
         font-size: 23px

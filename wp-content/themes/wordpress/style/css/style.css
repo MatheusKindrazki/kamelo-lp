@@ -92,7 +92,6 @@ p {
 header {
   position: fixed;
   z-index: 1000;
-  padding: 30px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,15 +99,27 @@ header {
   -ms-flex-align: center;
   align-items: center;
   top: 0;
-  left: 0; }
+  left: 0;
+  padding: 15px; }
+  @media (min-width: 992px) {
+    header {
+      padding: 30px 100px; } }
   header img {
-    margin-right: 100px;
-    height: 15px;
     display: block;
     -moz-transition: all 0.9s linear;
     -o-transition: all 0.9s linear;
     -webkit-transition: all 0.9s linear;
-    transition: all 0.9s linear; }
+    transition: all 0.9s linear;
+    margin-right: 15px;
+    height: 10px;
+    margin-bottom: -3px; }
+    @media (min-width: 576px) {
+      header img {
+        height: 15px;
+        margin-bottom: 0; } }
+    @media (min-width: 992px) {
+      header img {
+        margin-right: 100px; } }
   header ul {
     margin: 0;
     padding: 0;
@@ -117,16 +128,22 @@ header {
     display: flex;
     list-style-type: none; }
     header ul li {
-      margin-right: 20px; }
+      margin-right: 15px; }
+      @media (min-width: 576px) {
+        header ul li {
+          margin-right: 20px; } }
       header ul li a {
         opacity: 0.4;
         font-family: "Open Sans", sans-serif;
-        font-size: 12px;
         color: #000000 !important;
         -moz-transition: all 0.9s linear;
         -o-transition: all 0.9s linear;
         -webkit-transition: all 0.9s linear;
-        transition: all 0.9s linear; }
+        transition: all 0.9s linear;
+        font-size: 9px; }
+        @media (min-width: 576px) {
+          header ul li a {
+            font-size: 12px; } }
 
 nav.navigation {
   position: fixed;
@@ -273,7 +290,6 @@ body.fp-viewing-cadastre-se .sessao::after {
       display: block;
       height: 100%;
       background: white;
-      padding: 0 100px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -283,9 +299,16 @@ body.fp-viewing-cadastre-se .sessao::after {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+      padding: 0 15px; }
+      @media (min-width: 992px) {
+        #banner .row .info {
+          padding: 0 100px; } }
       #banner .row .info .top {
-        margin-bottom: 90px; }
+        margin-bottom: 20px; }
+        @media (min-width: 992px) {
+          #banner .row .info .top {
+            margin-bottom: 90px; } }
     #banner .row .img-banner {
       display: block;
       width: 100%;
@@ -295,10 +318,13 @@ body.fp-viewing-cadastre-se .sessao::after {
       background-repeat: no-repeat;
       background-size: cover; }
     #banner .row .redes {
-      margin-top: 90px;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      margin-top: 50px; }
+      @media (min-width: 992px) {
+        #banner .row .redes {
+          margin-top: 90px; } }
       #banner .row .redes a {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -342,23 +368,39 @@ body.fp-viewing-cadastre-se .sessao::after {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  #sobre p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 24px;
-    color: #ffffff;
-    opacity: 1;
-    margin-bottom: 45px; }
+  #sobre .content {
+    position: relative;
+    z-index: 10;
+    display: block;
+    width: 100%; }
+    #sobre .content p {
+      font-family: "Open Sans", sans-serif;
+      color: #ffffff;
+      opacity: 1;
+      margin-bottom: 45px;
+      font-size: 16px; }
+      @media (min-width: 992px) {
+        #sobre .content p {
+          font-size: 24px; } }
   #sobre .phone {
-    width: 500px;
     display: block;
     position: absolute;
-    right: 40px;
     bottom: 0;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    pointer-events: none; }
+    pointer-events: none;
+    z-index: 5;
+    width: 100px;
+    right: 20px; }
+    @media (min-width: 576px) {
+      #sobre .phone {
+        width: 200px;
+        right: 40px; } }
+    @media (min-width: 992px) {
+      #sobre .phone {
+        width: 500px; } }
 
 #objetivos {
   display: -webkit-box;
@@ -367,9 +409,17 @@ body.fp-viewing-cadastre-se .sessao::after {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding: 100px 0; }
+  @media (min-width: 992px) {
+    #objetivos {
+      padding: 0; } }
   #objetivos .item-single {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 50px; }
+    @media (min-width: 992px) {
+      #objetivos .item-single {
+        margin-bottom: 0; } }
     #objetivos .item-single .img-item {
       width: 300px;
       height: 251px;
@@ -379,7 +429,11 @@ body.fp-viewing-cadastre-se .sessao::after {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      width: 100%; }
+      @media (min-width: 576px) {
+        #objetivos .item-single .img-item {
+          width: 300px; } }
     #objetivos .item-single .title {
       font-family: "Open Sans", sans-serif;
       font-size: 30px;
@@ -394,7 +448,6 @@ body.fp-viewing-cadastre-se .sessao::after {
 #cadastro {
   width: 100%;
   min-height: 100vh;
-  background-image: url("../../images/bg-cadastro.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -403,7 +456,12 @@ body.fp-viewing-cadastre-se .sessao::after {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding: 100px 0; }
+  @media (min-width: 992px) {
+    #cadastro {
+      background-image: url("../../images/bg-cadastro.png");
+      padding: 0; } }
   #cadastro .title-1-cad, #cadastro .title-2-cad {
     font-family: "Roboto", sans-serif;
     font-size: 50px;
@@ -412,24 +470,38 @@ body.fp-viewing-cadastre-se .sessao::after {
     color: #434343; }
   #cadastro .title-2-cad {
     text-shadow: 0 6px 23px rgba(0, 0, 0, 0.08);
-    font-size: 100px;
     line-height: 1;
     letter-spacing: 11.49px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 50px; }
+    @media (min-width: 576px) {
+      #cadastro .title-2-cad {
+        font-size: 100px; } }
   #cadastro .desc {
     font-family: "Open Sans", sans-serif;
-    font-size: 24px;
-    color: #7e7e7e; }
+    font-size: 16px;
+    color: #7e7e7e;
+    margin-bottom: 40px; }
+    @media (min-width: 992px) {
+      #cadastro .desc {
+        font-size: 24px;
+        margin-bottom: 0; } }
 
 .form-eddy {
-  width: 90%;
   border-radius: 10px;
   -webkit-box-shadow: 3px 14px 14px 3px rgba(0, 0, 0, 0.04);
   box-shadow: 3px 14px 14px 3px rgba(0, 0, 0, 0.04);
   border: solid 1px #f3f3f3;
   background-color: #ffffff;
-  margin-right: 30px;
-  padding: 40px; }
+  width: 100%;
+  padding: 40px 15px; }
+  @media (min-width: 576px) {
+    .form-eddy {
+      padding: 40px; } }
+  @media (min-width: 992px) {
+    .form-eddy {
+      width: 90%;
+      margin-right: 30px; } }
   .form-eddy .title-form {
     font-family: "Open Sans", sans-serif;
     font-size: 23px;

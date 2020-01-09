@@ -9,12 +9,16 @@
             display: block
             height: 100%
             background: white
-            padding: 0 100px
             display: flex
             justify-content: center
             flex-direction: column
+            padding: 0 15px
+            @media(min-width: 992px)
+                padding: 0 100px
             .top
-                margin-bottom: 90px
+                margin-bottom: 20px
+                @media(min-width: 992px)
+                    margin-bottom: 90px
         .img-banner
             display: block
             width: 100%
@@ -24,8 +28,10 @@
             background-repeat: no-repeat
             background-size: cover
         .redes
-            margin-top: 90px
             display: flex
+            margin-top: 50px
+            @media(min-width: 992px)
+                margin-top: 90px
             a
                 display: flex
                 align-items: center
