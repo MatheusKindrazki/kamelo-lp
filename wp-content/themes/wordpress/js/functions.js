@@ -4,15 +4,15 @@ const home = () => {
 	jQuery("#home").fullpage({
 		licenseKey: keyFullpage,
 		navigation: false,
-		scrollOverflow: true
+		scrollOverflow: true,
+		anchors: [
+			"introducao",
+			"quem-somos",
+			"nosso-objetivo",
+			"cadastre-se",
+		],
 	});
 }
-
-const quemSomos = () => {}
-
-const objetivo = () => {}
-
-const cadastro = () => {}
 
 jQuery('document').ready(function(){
 	home();

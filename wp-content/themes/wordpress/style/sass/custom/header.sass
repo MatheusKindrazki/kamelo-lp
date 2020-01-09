@@ -4,6 +4,8 @@ header
     padding: 30px 100px
     display: flex
     align-items: center
+    top: 0
+    left: 0
     img
         margin-right: 100px
         height: 15px
@@ -23,7 +25,72 @@ header
                 color: #000000 !important
                 @include transition(all 0.9s linear)
 
-body.fp-viewing-1, body.fp-viewing-3
+nav.navigation
+    position: fixed
+    left: 20px
+    top: 50%
+    @include transform(translateY(-50%))
+    display: block
+    height: calc(100vh - 80px)
+    width: 20px
+    z-index: 2000
+    pointer-events: none
+    user-select: none
+    &:before
+        content: ''
+        position: absolute
+        left: 50%
+        @include transform(translateX(-50%))
+        bottom: 0
+        width: 2px
+        background: rgba(0,0,0, 0.2)
+        height: 60%
+        @include transition(all 0.9s linear)
+    .content
+        position: absolute
+        left: 0
+        @include transform(rotate(270deg))
+        bottom: 62%
+        height: 240px
+        width: 240px
+        display: flex
+        p
+            font-family: $roboto
+            font-size: 10px
+            letter-spacing: 0.3px
+            color: rgba(0,0,0, 0.2)
+            width: fit-content
+            height: fit-content
+            opacity: 1
+            @include transition(all 0.9s linear)
+        .sessao
+            padding-right: 40px
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                top: 50%
+                @include transform(translateY(-50%))
+                right: 0
+                height: 2px
+                width: 30px
+                background: rgba(0,0,0, 0.2)
+                @include transition(all 0.9s linear)
+        .title-site
+            padding-left: 10px
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                top: 50%
+                @include transform(translateY(-50%))
+                left: calc(100% + 10px)
+                height: 2px
+                width: 70px
+                background: rgba(0,0,0, 0.2)
+                @include transition(all 0.9s linear)
+
+body.fp-viewing-quem-somos, body.fp-viewing-cadastre-se
     header
         ul
             li
@@ -31,3 +98,34 @@ body.fp-viewing-1, body.fp-viewing-3
                     color: #ffffff !important
         img
             filter: invert(1)
+
+body.fp-viewing-quem-somos
+    nav.navigation
+        &:before
+            background: rgba(255,255,255, 0.2) !important
+        .content
+            p
+                color: rgba(255,255,255, 0.2) !important
+            .sessao,.title-site
+                &::before
+                    background: rgba(255,255,255, 0.2) !important
+
+body.fp-viewing-introducao
+    .sessao
+        &::after
+            content: 'Home'
+
+body.fp-viewing-quem-somos
+    .sessao
+        &::after
+            content: 'Quem somos'
+
+body.fp-viewing-nosso-objetivo
+    .sessao
+        &::after
+            content: 'Nosso Objetivo'
+
+body.fp-viewing-cadastre-se
+    .sessao
+        &::after
+            content: 'Cadastre-se'

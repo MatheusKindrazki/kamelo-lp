@@ -1,4 +1,4 @@
-<div class="section">
+<div class="section" data-anchor="nosso-objetivo">
     <div id="objetivos">
         <div class="container">
         <?php if( have_rows('objetivos') ): ?>

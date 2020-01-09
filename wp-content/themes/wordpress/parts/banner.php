@@ -1,4 +1,4 @@
-<div class="section">
+<div class="section" data-anchor="introducao">
     <div id="banner">
     <div class="row h-100">
         <div class="col-lg-5">
@@ -11,7 +11,7 @@
                         <?php echo get_field('descricao_banner'); ?>
                     </p>
                 </div>
-                <a href="#!" class="btn-theme">Cadastre-se</a>
+                <a href="#cadastre-se" class="btn-theme">Cadastre-se</a>
                 <div class="redes">
                     <a href="<?php echo get_field('facebook', 'options') ?>" target="_blank">
                         <i class="fab fa-facebook-f"></i>

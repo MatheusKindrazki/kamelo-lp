@@ -1,4 +1,4 @@
-<div class="section">
+<div class="section" data-anchor="cadastre-se">
     <div id="cadastro">
         <div class="container">
             <div class="row align-items-center">

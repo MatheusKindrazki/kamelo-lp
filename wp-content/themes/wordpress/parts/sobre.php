@@ -1,4 +1,4 @@
-<div class="section">
+<div class="section" data-anchor="quem-somos">
     <div id="sobre">
         <div class="container">
             <div class="row">
@@ -7,7 +7,7 @@
                     <p>
                         <?php echo get_field('descricao_sobre'); ?>
                     </p>
-                    <a href="#!" target="_blank" class="btn-theme purple">Cadastre-se</a>
+                    <a href="#cadastre-se" class="btn-theme purple">Cadastre-se</a>
                 </div>
             </div>
         </div>
