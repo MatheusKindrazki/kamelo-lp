@@ -1,0 +1,126 @@
+#cadastro
+    width: 100%
+    min-height: 100vh
+    background-position: top
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    align-items: center
+    padding: 100px 0
+    @media(min-width: 992px)
+        background-image: url('../../images/bg-cadastro.png')
+        padding: 0
+    .title-1-cad,.title-2-cad
+        font-family: $roboto
+        font-size: 50px
+        line-height: 2
+        letter-spacing: 10.44px
+        color: #434343
+    .title-2-cad
+        text-shadow: 0 6px 23px rgba(0, 0, 0, 0.08)
+        line-height: 1
+        letter-spacing: 11.49px
+        margin-bottom: 30px
+        font-size: 50px
+        @media(min-width: 576px)
+            font-size: 100px
+    .desc
+        font-family: $open
+        font-size: 16px
+        color: #7e7e7e
+        margin-bottom: 40px
+        @media(min-width: 992px)
+            font-size: 24px
+            margin-bottom: 0
+
+.form-eddy
+    border-radius: 10px
+    box-shadow: 3px 14px 14px 3px rgba(0, 0, 0, 0.04)
+    border: solid 1px #f3f3f3
+    background-color: #ffffff
+    width: 100%
+    padding: 40px 15px
+    @media(min-width: 576px)
+        padding: 40px
+    @media(min-width: 992px)
+        width: 90%
+        margin-right: 30px
+    .title-form
+        font-family: $open
+        font-size: 23px
+        font-weight: 600
+        color: #434343
+        margin-bottom: 30px
+    .gform_confirmation_message
+        background-color: var(--green) !important
+        color: white !important
+        border-radius: 8px !important
+        border: 0px solid !important
+        padding: 20px !important
+    .gform_wrapper
+        margin: 0
+        .gform_heading
+            margin: 0
+        .validation_error
+            background-color: var(--red) !important
+            color: white !important
+            border-radius: 8px !important
+            border: 0px solid !important
+        .gform_body
+            ul
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                li
+                    width: 100%
+                    margin: 0
+                    padding: 0 !important
+                    margin-bottom: 30px
+                    label
+                        display: none !important
+                    .ginput_container
+                        margin: 0 !important
+                    input
+                        width: 100%
+                        padding: 0 20px !important
+                        height: 50px
+                        border-radius: 4px
+                        border: solid 1px #b7b7b7
+                        font-family: $open !important
+                        font-size: 14px !important
+                        font-weight: 500 !important
+                        line-height: 1.71 !important
+                        color: #8a94a6 !important
+                        display: block
+                        outline: none !important
+                        &::placeholder
+                            font-family: $open
+                            font-size: 14px
+                            font-weight: 500
+                            line-height: 1.71
+                            color: #8a94a6
+                    &.small-input
+                        width: calc(50% - 7.5px) !important
+                        min-width: calc(50% - 7.5px) !important
+                .gfield_error
+                    padding-top: 0 !important
+                    padding-bottom: 0 !important
+                    background: transparent !important
+                    border: 0px solid  !important
+                    max-width: initial !important
+                    min-width: 100% !important
+                    .gfield_description
+                        color: var(--red) !important
+                        padding: 0px !important
+                    input
+                        border: solid 1px red !important
+        .gform_footer
+            margin: 0
+            padding: 0
+            height: 56px !important
+            input[type="submit"]
+                @extend .btn-theme
+                cursor: pointer !important
+                outline: none !important
+                float: right !important
+                margin: 0 !important

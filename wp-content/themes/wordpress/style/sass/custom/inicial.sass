@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap')
 	
 body
 	background-color: $white
@@ -34,6 +35,13 @@ a, button
 	margin-bottom: 30px
 	font-weight: 500
 
+.title-2
+	font-family: $open
+	font-size: 36px
+	margin-bottom: 30px
+	color: #ffffff
+	font-weight: 500
+
 p
 	opacity: 0.4
 	font-family: $open
@@ -61,3 +69,7 @@ p
 	@include transition(all .3s ease)
 	&:hover
 		@include transform(scale(1.05))
+	&.purple
+		color: #7060bf !important
+		background: white
+		box-shadow: 0 19px 28px 0 rgba(255, 255, 255, 0.05)

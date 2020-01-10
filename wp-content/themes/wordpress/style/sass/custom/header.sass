@@ -1,0 +1,165 @@
+header
+    position: fixed
+    z-index: 1000
+    display: flex
+    align-items: center
+    top: 0
+    left: 0
+    padding: 15px
+    @media(min-width: 992px)
+        padding: 30px 100px
+    img
+        display: block
+        @include transition(all 0.9s linear)
+        margin-right: 15px
+        height: 10px
+        margin-bottom: -3px
+        @media(min-width: 576px)
+            height: 15px
+            margin-bottom: 0
+        @media(min-width: 992px)
+            margin-right: 100px
+    ul
+        margin: 0
+        padding: 0
+        display: flex
+        list-style-type: none
+        li
+            margin-right: 15px
+            @media(min-width: 576px)
+                margin-right: 20px
+            a
+                opacity: 0.4
+                font-family: $open
+                color: #000000 !important
+                @include transition(all 0.9s linear)
+                font-size: 9px
+                @media(min-width: 576px)
+                    font-size: 12px
+
+nav.navigation
+    position: fixed
+    left: 20px
+    top: 50%
+    @include transform(translateY(-50%))
+    display: block
+    height: calc(100vh - 80px)
+    width: 20px
+    z-index: 2000
+    pointer-events: none
+    user-select: none
+    &:before
+        content: ''
+        position: absolute
+        left: 50%
+        @include transform(translateX(-50%))
+        bottom: 0
+        width: 2px
+        background: rgba(0,0,0, 0.2)
+        height: 60%
+        @include transition(all 0.9s linear)
+    .content
+        position: absolute
+        left: 0
+        @include transform(rotate(270deg))
+        bottom: 62%
+        height: 240px
+        width: 240px
+        display: flex
+        p
+            font-family: $roboto
+            font-size: 10px
+            letter-spacing: 0.3px
+            color: rgba(0,0,0, 0.2)
+            width: fit-content
+            height: fit-content
+            opacity: 1
+            @include transition(all 0.9s linear)
+        .sessao
+            padding-right: 40px
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                top: 50%
+                @include transform(translateY(-50%))
+                right: 0
+                height: 2px
+                width: 30px
+                background: rgba(0,0,0, 0.2)
+                @include transition(all 0.9s linear)
+        .title-site
+            padding-left: 10px
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                top: 50%
+                @include transform(translateY(-50%))
+                left: calc(100% + 10px)
+                height: 2px
+                width: 70px
+                background: rgba(0,0,0, 0.2)
+                @include transition(all 0.9s linear)
+
+nav.localization
+    position: fixed
+    left: 24px
+    bottom: 10px
+    z-index: 2000
+    display: flex
+    align-items: center
+    p
+        opacity: 0.4
+        font-family: $open
+        font-size: 10px
+        letter-spacing: 0.3px
+        color: #000000
+        margin: 0
+        margin-left: 15px
+    p, i
+        @include transition(all 0.9s linear)
+
+body.fp-viewing-quem-somos, body.fp-viewing-cadastre-se
+    header
+        ul
+            li
+                a
+                    color: #ffffff !important
+        img
+            filter: invert(1)
+
+body.fp-viewing-quem-somos
+    nav.navigation
+        &:before
+            background: rgba(255,255,255, 0.2) !important
+        .content
+            p
+                color: rgba(255,255,255, 0.2) !important
+            .sessao,.title-site
+                &::before
+                    background: rgba(255,255,255, 0.2) !important
+    nav.localization
+        p, i
+            color: rgba(255,255,255, 0.2) !important
+            opacity: 1 !important
+
+body.fp-viewing-introducao
+    .sessao
+        &::after
+            content: 'Home'
+
+body.fp-viewing-quem-somos
+    .sessao
+        &::after
+            content: 'Quem somos'
+
+body.fp-viewing-nosso-objetivo
+    .sessao
+        &::after
+            content: 'Nosso Objetivo'
+
+body.fp-viewing-cadastre-se
+    .sessao
+        &::after
+            content: 'Cadastre-se'
