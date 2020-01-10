@@ -251,6 +251,31 @@ nav.navigation {
         -webkit-transition: all 0.9s linear;
         transition: all 0.9s linear; }
 
+nav.localization {
+  position: fixed;
+  left: 24px;
+  bottom: 10px;
+  z-index: 2000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  nav.localization p {
+    opacity: 0.4;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+    color: #000000;
+    margin: 0;
+    margin-left: 15px; }
+  nav.localization p, nav.localization i {
+    -moz-transition: all 0.9s linear;
+    -o-transition: all 0.9s linear;
+    -webkit-transition: all 0.9s linear;
+    transition: all 0.9s linear; }
+
 body.fp-viewing-quem-somos header ul li a, body.fp-viewing-cadastre-se header ul li a {
   color: #ffffff !important; }
 
@@ -266,6 +291,10 @@ body.fp-viewing-quem-somos nav.navigation .content p {
 
 body.fp-viewing-quem-somos nav.navigation .content .sessao::before, body.fp-viewing-quem-somos nav.navigation .content .title-site::before {
   background: rgba(255, 255, 255, 0.2) !important; }
+
+body.fp-viewing-quem-somos nav.localization p, body.fp-viewing-quem-somos nav.localization i {
+  color: rgba(255, 255, 255, 0.2) !important;
+  opacity: 1 !important; }
 
 body.fp-viewing-introducao .sessao::after {
   content: 'Home'; }

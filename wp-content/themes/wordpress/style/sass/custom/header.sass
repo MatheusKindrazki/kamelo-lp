@@ -102,6 +102,24 @@ nav.navigation
                 background: rgba(0,0,0, 0.2)
                 @include transition(all 0.9s linear)
 
+nav.localization
+    position: fixed
+    left: 24px
+    bottom: 10px
+    z-index: 2000
+    display: flex
+    align-items: center
+    p
+        opacity: 0.4
+        font-family: $open
+        font-size: 10px
+        letter-spacing: 0.3px
+        color: #000000
+        margin: 0
+        margin-left: 15px
+    p, i
+        @include transition(all 0.9s linear)
+
 body.fp-viewing-quem-somos, body.fp-viewing-cadastre-se
     header
         ul
@@ -121,6 +139,10 @@ body.fp-viewing-quem-somos
             .sessao,.title-site
                 &::before
                     background: rgba(255,255,255, 0.2) !important
+    nav.localization
+        p, i
+            color: rgba(255,255,255, 0.2) !important
+            opacity: 1 !important
 
 body.fp-viewing-introducao
     .sessao

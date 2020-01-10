@@ -15,3 +15,10 @@
         </p>
     </div>
 </nav>
+
+<nav class="localization d-lg-flex d-none">
+    <i class="fas fa-map-marker-alt"></i>
+    <p>
+        <?php echo get_field('endereco', 'options'); ?>
+    </p>
+</nav>
