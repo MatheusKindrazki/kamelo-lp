@@ -111,9 +111,9 @@ body.fp-viewing-cadastre-se .sessao::after { content: 'Cadastre-se'; }
 
 #sobre .content { position: relative; z-index: 10; display: block; width: 100%; }
 
-#sobre .content p { font-family: "Open Sans", sans-serif; color: #ffffff; opacity: 1; margin-bottom: 45px; font-size: 16px; }
+#sobre .content p { font-family: "Open Sans", sans-serif; color: #ffffff; opacity: 1; margin-bottom: 45px; font-size: 14px; }
 
-@media (min-width: 992px) { #sobre .content p { font-size: 24px; } }
+@media (min-width: 992px) { #sobre .content p { font-size: 17px; } }
 
 #sobre .phone { display: block; position: absolute; bottom: 0; user-select: none; pointer-events: none; z-index: 5; width: 100px; right: 20px; }
 
@@ -135,17 +135,17 @@ body.fp-viewing-cadastre-se .sessao::after { content: 'Cadastre-se'; }
 
 #objetivos .item-single .title { font-family: "Open Sans", sans-serif; font-size: 30px; font-weight: 600; color: #434343; margin-bottom: 20px; }
 
-#objetivos .item-single .desc { font-family: "Open Sans", sans-serif; font-size: 24px; color: #7a7a7a; }
+#objetivos .item-single .desc { font-family: "Open Sans", sans-serif; font-size: 17px; color: #7a7a7a; }
 
 #cadastro { width: 100%; min-height: 100vh; background-position: top; background-repeat: no-repeat; background-size: cover; display: flex; align-items: center; padding: 100px 0; }
 
 @media (min-width: 992px) { #cadastro { background-image: url("../../images/bg-cadastro.png"); padding: 0; } }
 
-#cadastro .title-1-cad, #cadastro .title-2-cad { font-family: "Roboto", sans-serif; font-size: 50px; line-height: 2; letter-spacing: 10.44px; color: #434343; }
+#cadastro .title-1-cad, #cadastro .title-2-cad { font-family: "Roboto", sans-serif; font-size: 36px; line-height: 2; letter-spacing: 9.44px; color: #434343; }
 
-#cadastro .title-2-cad { text-shadow: 0 6px 23px rgba(0, 0, 0, 0.08); line-height: 1; letter-spacing: 11.49px; margin-bottom: 30px; font-size: 50px; }
+#cadastro .title-2-cad { text-shadow: 0 6px 23px rgba(0, 0, 0, 0.08); line-height: 1; letter-spacing: 10.49px; margin-bottom: 30px; font-size: 40px; }
 
-@media (min-width: 576px) { #cadastro .title-2-cad { font-size: 80px; } }
+@media (min-width: 576px) { #cadastro .title-2-cad { font-size: 60px; } }
 
 #cadastro .desc { font-family: "Open Sans", sans-serif; font-size: 16px; color: #7e7e7e; margin-bottom: 40px; }
 
