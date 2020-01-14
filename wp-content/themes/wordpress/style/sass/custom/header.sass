@@ -13,7 +13,7 @@ header
         &:before
             transition: all 0.6s ease-in-out;
             content: '';
-            display: block;
+            display: none;
             position: absolute;
             background-repeat: no-repeat;
             background-size: contain;
@@ -23,6 +23,8 @@ header
             bottom: 0;
             margin: auto 0;
             left: -45px;
+            @media(min-width: 992px)
+                display: block
     img
         position: relative
         display: block
