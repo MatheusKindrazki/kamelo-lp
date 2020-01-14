@@ -221,6 +221,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/logo-neutro.png": {
+		"ft": 32768,
+		"iS": 30545,
+		"oA": 0,
+		"oAP": "/logo-neutro.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/parts/banner.php": {
 		"cB": 0,
 		"ft": 8192,

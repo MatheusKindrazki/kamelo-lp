@@ -23,7 +23,11 @@ header { position: fixed; z-index: 1000; display: flex; align-items: center; top
 
 @media (min-width: 992px) { header { padding: 30px 100px; } }
 
-header img { display: block; -moz-transition: all 0.9s linear; -o-transition: all 0.9s linear; -webkit-transition: all 0.9s linear; transition: all 0.9s linear; margin-right: 15px; height: 10px; margin-bottom: -3px; }
+header a[href="#introducao"] { position: relative; }
+
+header a[href="#introducao"]:before { transition: all 0.6s ease-in-out; content: ''; display: block; position: absolute; background-repeat: no-repeat; background-size: contain; width: 50px; height: 50px; top: 0; bottom: 0; margin: auto 0; left: -45px; }
+
+header img { position: relative; display: block; -moz-transition: all 0.9s linear; -o-transition: all 0.9s linear; -webkit-transition: all 0.9s linear; transition: all 0.9s linear; margin-right: 15px; height: 10px; margin-bottom: -3px; }
 
 @media (min-width: 576px) { header img { height: 15px; margin-bottom: 0; } }
 
