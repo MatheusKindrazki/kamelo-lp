@@ -20,19 +20,19 @@
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define( 'DB_NAME', 'kamelo' );
+define( 'DB_NAME', 'kamelo');
 
 /** Usuário do banco de dados MySQL */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'kamelo');
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', 'mysql' );
+define( 'DB_PASSWORD', 'kamelo');
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'db:3306');
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8');
 
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
 define('DB_COLLATE', '');
@@ -84,6 +84,9 @@ $table_prefix = 'wp_';
  */
 define('WP_DEBUG', false);
 ini_set("display_errors", 0);
+
+define('WP_HOME','http://localhost:9000');
+define('WP_SITEURL','http://localhost:9000');
 
 /* Isto é tudo, pode parar de editar! :) */
 
